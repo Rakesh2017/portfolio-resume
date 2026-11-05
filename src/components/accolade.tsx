@@ -12,14 +12,24 @@ const accolade = () => {
           <h4 className="title-h4">Accolade Inc</h4>
           {/* <p className='date-p'>May 2021 - Current</p> */}
         </div>
-        <a
-          className="website-link-a link-android"
-          href="https://play.google.com/store/apps/details?id=com.accolade.mobile.prod"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          &nbsp; Android Play Store
-        </a>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 20px" }}>
+          <a
+            className="website-link-a link-android"
+            href="https://play.google.com/store/apps/details?id=com.accolade.mobile.prod"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Android Play Store
+          </a>
+          <a
+            className="website-link-a link-ios"
+            href="https://apps.apple.com/us/app/accolade-inc/id1203452254"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            iOS App Store
+          </a>
+        </div>
         {/* <div className="coming-soon-div">
         <button className="demo-btn">
           <a
