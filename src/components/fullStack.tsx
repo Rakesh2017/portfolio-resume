@@ -28,7 +28,7 @@ const FullStack = () => {
   return (
     <div id="fullstack" className="stack-con">
       <div className="stack-con">
-        <h4 className="stack-h3">Tech-Stack</h4>
+        <p className="eyebrow">04 / THE TOOLKIT</p><h2>The tools behind the craft.</h2>
       </div>
       <div className="stack-content-con">
         {/* mobile and front end */}

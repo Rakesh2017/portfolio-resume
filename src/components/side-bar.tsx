@@ -1,102 +1,21 @@
-import React from "react";
-import profileImage from "../images/profile-pic.jpg";
+import React, { useState } from "react";
+import ThemeToggle from "./theme-toggle";
 
-const SideBar = () => {
-  // toggle side bar
-  function toggle_side_bar(): any {
-    document.querySelector(".toggle-con-1")?.classList.toggle("active");
-    document.querySelector(".toggle-con-2")?.classList.toggle("active");
-    document.querySelector(".toggle-con-3")?.classList.toggle("active");
-    document.querySelector(".side-bar-con")?.classList.toggle("maximized");
-  }
-
-  // show resume and hide the main/hero container
-  function show_resume(): any {
-    document.querySelector(".main-resume-con-disable")?.classList.add("main-resume-con-active");
-    document.querySelector(".main-resume-con-active")?.classList.remove("main-resume-con-disable");
-    document.querySelector(".super-parent-con-active")?.classList.toggle("super-parent-con-disable");
-  }
-
-  const resume_download_url = 'https://drive.google.com/file/d/1Hh2UFWo6I2GBC-yRJn9_Quzvmil8JBs3/view?usp=sharing'; 
-  const cv_url = "https://read.cv/rakesh7"
-  
-  return (
-    <div className="side-bar-con minimized">
-      <div className="cross-con">
-        <i
-          id="bar-btn"
-          onClick={() => {
-            toggle_side_bar();
-          }}
-          className="fas fa-bars"
-        ></i>
+export default function SideBar() {
+  const [open, setOpen] = useState(false);
+  return <header className="site-nav">
+    <div className="nav-inner">
+      <a href="#home" className="wordmark" aria-label="Rakesh home">rakesh<span>.</span></a>
+      <nav id="site-links" className={`nav-links ${open ? "is-open" : ""}`} aria-label="Main navigation">
+        <a href="#work" onClick={() => setOpen(false)}>Work</a>
+        <a href="#about" onClick={() => setOpen(false)}>About</a>
+        <a href="#work-experience" onClick={() => setOpen(false)}>Experience</a>
+        <a href="#hire-me" onClick={() => setOpen(false)}>Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div className="nav-actions">
+        <ThemeToggle />
+        <button className="menu-toggle" aria-expanded={open} aria-controls="site-links" onClick={() => setOpen(!open)}>{open ? "Close" : "Menu"}</button>
       </div>
-      <div className="content-con">
-        {/* name */}
-        <div className="name-con">
-          <h1 className="name-h1">Rakesh</h1>
-        </div>
-        {/* profile image */}
-        <div className="image-con disable toggle-con-1">
-          <img src={profileImage} alt="profile" />
-        </div>
-        <div className="info-con disable toggle-con-2">
-          <p className="info-p">
-            WELCOME TO MY PORTFOLIO
-          </p>
-        </div>
-        <div className="resume-con disable toggle-con-3">
-           {/* view resume */}
-          {/* <button
-            className="view-resume-btn"
-            onClick={() => {
-              show_resume();
-            }}
-          >
-            &nbsp;View Resume
-          </button> */}
-          <button 
-          className="download-resume-btn"
-          onClick={() => window.open(resume_download_url, '_blank')}
-          >
-            &nbsp;
-            <a
-              className="download-a"
-              target='_blank'
-              href={resume_download_url}
-              download="resume"
-            >
-              Download Resume
-            </a>
-          </button>
-          <button 
-          className="view-cv-btn"
-          onClick={() => window.open(cv_url, '_blank')}
-          >
-            &nbsp;
-            <a
-              className="download-a"
-              target='_blank'
-              href={cv_url}
-              download="resume"
-            >
-              View CV
-            </a>
-          </button>
-          <button 
-          className="hire-me-btn"
-          onClick={() => window.open("#hire-me", '_blank')}
-          >
-            &nbsp;{" "}
-            <a className="hire-a" href="#hire-me">
-              Get In Touch
-            </a>{" "}
-          </button>
-        </div>
-      </div>
-      
     </div>
-  )
+  </header>;
 }
-
-export default SideBar

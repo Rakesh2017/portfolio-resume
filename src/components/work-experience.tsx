@@ -10,7 +10,7 @@ const WorkExperience = () => {
   return (
     <div className="work-exp-con" id="work-experience">
       <div>
-        <h4 className="work-exp-h4">Work Experience</h4>
+        <p className="eyebrow">03 / THE JOURNEY</p><h2>Experience that adds up.</h2>
       </div>
       <div style={{ position:"relative" }}>
         {/* <div id="line1" className="horizontal-line" /> */}

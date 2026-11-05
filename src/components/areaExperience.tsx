@@ -10,7 +10,7 @@ const AreaOfExperience = () => {
       {/* experience */}
       <div id="experience" className="expertise-con">
         <div>
-          <h4 className="title-h4">Area of Experience</h4>
+          <p className="eyebrow">05 / WHAT I DO</p><h2>Mobile first. Detail always.</h2>
         </div>
 
         <div className="expertise-main-con">
@@ -19,7 +19,7 @@ const AreaOfExperience = () => {
             <div className="image-con">
               <img src={smartphone} alt="icon 2" />
             </div>
-            <h5 className="title-h5">Mobile Applications<br></br><span style={{ color: 'gray' }}>(Android Native, Flutter & React Native)</span></h5>
+            <h5 className="title-h5">Mobile Applications<br></br><span className="muted">(Android Native, Flutter & React Native)</span></h5>
             <p className="info-p" style={{fontSize:'0.9rem'}}>
             Over 6+ years of experience building high-performing mobile apps using Native Android and React Native. I possess a strong understanding of Android architecture patterns (MVVM-UseCases, MVC, MVP) and leverage both Kotlin and Java for development. 
             In React Native, I'm proficient in component-based architecture, Redux-Saga for state management, and integrating third-party libraries to enhance functionality.
@@ -34,7 +34,7 @@ const AreaOfExperience = () => {
             <div className="image-con">
               <img src={web} alt="icon 1" />
             </div>
-            <h5 className="title-h5">Web Applications<br></br><span style={{ color: 'gray' }}>(ReactJS)</span></h5>
+            <h5 className="title-h5">Web Applications<br></br><span className="muted">(ReactJS)</span></h5>
             <p className="info-p" style={{fontSize:'0.9rem'}}>
             Over a year of experience has equipped me with the skills to build dynamic and user-friendly web applications using React.  I've developed a strong understanding of the React library through extensive use in real-world project.  My passion for building intuitive interfaces and user experiences fuels my dedication to mastering React's capabilities.
 
