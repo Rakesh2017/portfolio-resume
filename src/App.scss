@@ -139,4 +139,6 @@ h1 > span { font-family: Georgia, serif; font-style: italic; font-weight: 400; c
   .footer-bottom { margin-top: 50px; flex-wrap: wrap; }
   .contact-email { gap: 16px; }
 }
+@import "styles/motion";
+
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }

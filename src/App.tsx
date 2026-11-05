@@ -11,7 +11,11 @@ import AreaOfExperience from "./components/areaExperience";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
+import MobileStudio from "./components/mobile-studio";
+import useReveal from "./hooks/use-reveal";
+
 function App() {
+  useReveal();
  
   const firebaseConfig = {
     apiKey: "AIzaSyA1sH3kxCaDIvqQWLRdHB68rRsmElqIjzI",
@@ -37,6 +41,7 @@ function App() {
         <Header />
         <div className="main-con">
           <section id="about"><Welcome /></section>
+          <MobileStudio />
           <section aria-label="Selected projects"><FeaturedWork /></section>
           <section aria-label="Career"><WorkExperience /></section>
           <section aria-label="Technologies"><FullStack /></section>
