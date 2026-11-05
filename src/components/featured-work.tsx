@@ -1,7 +1,6 @@
 import React from "react";
 import CarbonPrint from "../components/carbonprint";
 import Lovenders from "../components/lovenders";
-import Realisting from "../components/realisting";
 import Offbeat from "../components/offbeat";
 import HappyFridge from "../components/happy-fridge";
 import EMC from "./emc";
@@ -13,7 +12,7 @@ const FeaturedWork = () => {
   return (
     <div id="work" className="featured-work-con">
       <div className="featured-work-title-con">
-        <h4 className="featured-work-h3">Featured Work</h4>
+        <div><p className="eyebrow">02 / SELECTED WORK</p><h2>Ideas brought to life.</h2></div><p>A selection of apps I’ve helped build.<br />Real products. Thoughtful engineering.</p>
       </div>
       <Accolade />
       <hr className="divider-hr" />

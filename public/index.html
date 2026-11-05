@@ -6,13 +6,13 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86"
+      content="width=device-width, initial-scale=1"
     />
 
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="This is a potfolio website of rakesh (rakesh22717@gmail.com)"
+      content="Rakesh — Senior mobile application developer. Explore Android, Flutter, and React Native projects."
     />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
@@ -36,7 +36,16 @@
 <!-- Add Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
 
-    <title>Rakesh - Portfolio</title>
+    <script>
+      (function () {
+        var theme;
+        try { theme = localStorage.getItem('portfolio-theme'); } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <title>Rakesh — Mobile Application Developer</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

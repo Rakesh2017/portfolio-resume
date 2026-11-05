@@ -1,110 +1,26 @@
-import React, { useState, useEffect, useRef } from "react";
-import image from "../images/portfolio-background.jpg";
+import React from "react";
+import portrait from "../images/profile-pic.jpg";
 
-interface ChildProps {
-  scaleValue: number;
-}
-
-const Header: React.FC<ChildProps> = ({scaleValue}) => {
-
-  return (
-    <header id='#header-me' className="header-con">
-      {/* header main container */}
-      {/* name and designation BLOCK */}
-      <img
-        className="header-background-img"
-        src={image}
-        alt="background"
-       style={{ transform: 'scaleY(' + scaleValue + ')'}}
-      />
-      <div className="header-content-child-con">
-        <div>
-          {/* designation */}
-          <div>
-            <h1 className="designation-h1">
-              Senior Mobile<br/> Application developer<br/> 
-              {/* <span>developer</span> */}
-            </h1>
-            <span className="designation-p">(Android Native, Flutter & React Native)</span>
-          </div>
-          <br/>
-          {/* name */}
-          <div className="name-con">
-            {/* <h3 className="name-h3">rakesh</h3> */}
-          </div>
-          {/* email */}
-          <div className="email-con">
-            <p className="email-p">rakesh22717@gmail.com</p>
-          </div>
-        </div>
-        {/* name and designation BLOCK [ENDS] */}
-
-        {/* social links */}
-        <nav className="social-links-nav">
-          <ul>
-            {/* linkdein */}
-            <li>
-              <a
-                className="visually-hidden"
-                href="http://linkedin.com/in/rakesh-aa3135117"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                linkedin
-              </a>
-              <a
-                className="icon-link"
-                href="http://linkedin.com/in/rakesh-aa3135117"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                <i className="fab fa-linkedin"></i>
-              </a>
-            </li>
-            {/* github */}
-            <li>
-              <a
-                className="visually-hidden"
-                href="https://github.com/Rakesh2017"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                Github
-              </a>
-              <a
-                className="icon-link"
-                href="https://github.com/Rakesh2017"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                <i className="fab fa-github-square"></i>
-              </a>
-            </li>
-            {/* stack over flow */}
-            <li>
-              <a
-                className="visually-hidden"
-                href="https://stackoverflow.com/users/7872344/rakesh-kumar"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                Stack over flow
-              </a>
-              <a
-                className="icon-link"
-                href="https://stackoverflow.com/users/7872344/rakesh-kumar"
-                target="_blank"
-                rel='noopener noreferrer'
-              >
-                <i className="fab fa-stack-overflow"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        {/* social links [ENDS] */}
+export default function Header() {
+  return <section id="home" className="hero">
+    <div className="hero-copy">
+      <p className="eyebrow"><span className="status-dot" /> MOBILE ENGINEER · CREATIVE PROBLEM SOLVER</p>
+      <h1>Thoughtful code.<br /> <span>Meaningful</span><br /> mobile experiences.</h1>
+      <p className="hero-intro">Hi, I’m Rakesh. A senior mobile application developer turning complex challenges into intuitive Android, Flutter, and React Native apps.</p>
+      <div className="hero-actions">
+        <a className="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+        <a className="button button-secondary" href="https://drive.google.com/file/d/1Hh2UFWo6I2GBC-yRJn9_Quzvmil8JBs3/view?usp=sharing" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a>
       </div>
-    </header>
-  );
-};
-
-export default Header;
+      <div className="social-links">
+        <a href="https://github.com/Rakesh2017" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://linkedin.com/in/rakesh-aa3135117" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a href="https://stackoverflow.com/users/7872344/rakesh-kumar" target="_blank" rel="noopener noreferrer">Stack Overflow ↗</a>
+      </div>
+    </div>
+    <div className="hero-visual">
+      <div className="portrait-frame"><img src={portrait} alt="Rakesh" /></div>
+      <div className="craft-note"><span aria-hidden="true">✳</span><div>Built with intention.<small>From the first idea to the final interaction.</small></div></div>
+    </div>
+    <div className="hero-bottom"><span>ANDROID NATIVE</span><span>FLUTTER</span><span>REACT NATIVE</span><a href="#about">Get to know me ↓</a></div>
+  </section>;
+}
