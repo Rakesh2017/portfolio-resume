@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1b16f0fedcc4fdc2e307f96b35fefec6",
+    "revision": "812bc390de846e491343f4ec918110d2",
     "url": "/rakesh.github.io/index.html"
   },
   {
-    "revision": "ac29890166a548ddd8ec",
-    "url": "/rakesh.github.io/static/css/main.3835328c.chunk.css"
+    "revision": "4aa75047826cb8f36f73",
+    "url": "/rakesh.github.io/static/css/2.9efe85b2.chunk.css"
   },
   {
-    "revision": "99a6bc7f1403d86112b0",
-    "url": "/rakesh.github.io/static/js/2.e8de3615.chunk.js"
+    "revision": "434ce32e7fa1ab5121b9",
+    "url": "/rakesh.github.io/static/css/main.fc79199a.chunk.css"
   },
   {
-    "revision": "8cf278a1a0563202cd02de54ef2ff4ee",
-    "url": "/rakesh.github.io/static/js/2.e8de3615.chunk.js.LICENSE.txt"
+    "revision": "4aa75047826cb8f36f73",
+    "url": "/rakesh.github.io/static/js/2.f6005c3a.chunk.js"
   },
   {
-    "revision": "ac29890166a548ddd8ec",
-    "url": "/rakesh.github.io/static/js/main.93cb8e91.chunk.js"
+    "revision": "95af4499b45f4a170dde689372911b1e",
+    "url": "/rakesh.github.io/static/js/2.f6005c3a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13b8aa9d2a2bf4ceba83",
-    "url": "/rakesh.github.io/static/js/runtime-main.de59a90b.js"
+    "revision": "434ce32e7fa1ab5121b9",
+    "url": "/rakesh.github.io/static/js/main.53951d94.chunk.js"
+  },
+  {
+    "revision": "c8d98c000d2a8e0eb928",
+    "url": "/rakesh.github.io/static/js/runtime-main.f4c8767c.js"
   },
   {
     "revision": "79d5d8179556f9a105d0e34821347487",
@@ -60,16 +64,72 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rakesh.github.io/static/media/emc.5e43f75a.png"
   },
   {
+    "revision": "1a575a4138e5f366474f0e7c5bd614a5",
+    "url": "/rakesh.github.io/static/media/fa-brands-400.1a575a41.woff"
+  },
+  {
+    "revision": "1d5619cd804367cefe6da2d79289218a",
+    "url": "/rakesh.github.io/static/media/fa-brands-400.1d5619cd.svg"
+  },
+  {
+    "revision": "513aa607d398efaccc559916c3431403",
+    "url": "/rakesh.github.io/static/media/fa-brands-400.513aa607.ttf"
+  },
+  {
+    "revision": "592643a83b8541edc52063d84c468700",
+    "url": "/rakesh.github.io/static/media/fa-brands-400.592643a8.eot"
+  },
+  {
+    "revision": "ed311c7a0ade9a75bb3ebf5a7670f31d",
+    "url": "/rakesh.github.io/static/media/fa-brands-400.ed311c7a.woff2"
+  },
+  {
+    "revision": "766913e6c0088ab8c9f73e18b4127bc4",
+    "url": "/rakesh.github.io/static/media/fa-regular-400.766913e6.ttf"
+  },
+  {
+    "revision": "b0e2db3b634d1bc3928e127458d993d8",
+    "url": "/rakesh.github.io/static/media/fa-regular-400.b0e2db3b.eot"
+  },
+  {
+    "revision": "b91d376b8d7646d671cd820950d5f7f1",
+    "url": "/rakesh.github.io/static/media/fa-regular-400.b91d376b.woff2"
+  },
+  {
+    "revision": "c5d109be8edd3de0f60eb472bd9ef691",
+    "url": "/rakesh.github.io/static/media/fa-regular-400.c5d109be.svg"
+  },
+  {
+    "revision": "d1d7e3b4c219fde0f7376c6facfd7149",
+    "url": "/rakesh.github.io/static/media/fa-regular-400.d1d7e3b4.woff"
+  },
+  {
+    "revision": "0c6bfc668a72935760178f91327aed3a",
+    "url": "/rakesh.github.io/static/media/fa-solid-900.0c6bfc66.eot"
+  },
+  {
+    "revision": "37bc7099f6f1ba80236164f22e905837",
+    "url": "/rakesh.github.io/static/media/fa-solid-900.37bc7099.svg"
+  },
+  {
+    "revision": "b9625119ce4300f0ef890a8f3234c773",
+    "url": "/rakesh.github.io/static/media/fa-solid-900.b9625119.ttf"
+  },
+  {
+    "revision": "d745348d289b149026921f197929a893",
+    "url": "/rakesh.github.io/static/media/fa-solid-900.d745348d.woff"
+  },
+  {
+    "revision": "d824df7eb2e268626a2dd9a6a741ac4e",
+    "url": "/rakesh.github.io/static/media/fa-solid-900.d824df7e.woff2"
+  },
+  {
     "revision": "84d391a779d96c8e04c53818f21dad97",
     "url": "/rakesh.github.io/static/media/fastlane.84d391a7.png"
   },
   {
     "revision": "10b0719343408095f5a9b369e0787115",
     "url": "/rakesh.github.io/static/media/firebase.10b07193.svg"
-  },
-  {
-    "revision": "5e48c390784e6d6e9ed8960639bf8d31",
-    "url": "/rakesh.github.io/static/media/footer_backgrond.5e48c390.png"
   },
   {
     "revision": "ce0b0d52559641cc62d3c05b224b5220",
@@ -112,16 +172,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rakesh.github.io/static/media/offbeat.44399590.jpg"
   },
   {
-    "revision": "266de1378aec0c6af3ddc7df3c6eed79",
-    "url": "/rakesh.github.io/static/media/portfolio-background.266de137.jpg"
-  },
-  {
     "revision": "f642a205d3eaa224f386c90e06c29209",
     "url": "/rakesh.github.io/static/media/profile-pic.f642a205.jpg"
-  },
-  {
-    "revision": "f611c5dda3acdb1e5d95f5d920e91aee",
-    "url": "/rakesh.github.io/static/media/rakesh-resume2.f611c5dd.jpg"
   },
   {
     "revision": "eab76719fd611cab5eecb1eb1427675a",
