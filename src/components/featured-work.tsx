@@ -7,6 +7,7 @@ import EMC from "./emc";
 import Tablo from "./tablo";
 import Miinga from "./miinga";
 import Accolade from "./accolade";
+import Transcarent from "./transcarent";
 
 const FeaturedWork = () => {
   return (
@@ -14,6 +15,8 @@ const FeaturedWork = () => {
       <div className="featured-work-title-con">
         <div><p className="eyebrow">02 / SELECTED WORK</p><h2>Ideas brought to life.</h2></div><p>A selection of apps I’ve helped build.<br />Real products. Thoughtful engineering.</p>
       </div>
+      <Transcarent />
+      <hr className="divider-hr" />
       <Accolade />
       <hr className="divider-hr" />
       <Tablo />
